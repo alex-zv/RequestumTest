@@ -1,5 +1,4 @@
 function calculateIntakeEndDate(intakes, stock, frequency, weekDays) {
-
     const config = {
             dayStep: 1
         },
@@ -81,25 +80,3 @@ function calculateIntakeEndDate(intakes, stock, frequency, weekDays) {
     }
 
 }
-
-const intakes = [
-    {time: "9:15", pills: 1},
-    {time: "15:35", pills: 2},
-    {time: "19:00", pills: 1},
-];
-
-const stock = 0;
-
-const frequency = "weekly"; //possible values - "daily", "eachOtherDay" (через день), "weekly";
-
-const weekDays = {
-    monday: true,
-    tuesday: false,
-    wednesday: true,
-    thursday: false,
-    friday: true,
-    saturday: false,
-    sunday: false,
-};
-
-console.warn(calculateIntakeEndDate(intakes, stock, frequency, weekDays));
